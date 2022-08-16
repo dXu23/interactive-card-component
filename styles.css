@@ -1,0 +1,135 @@
+
+:root {
+  /*
+   * Primary colors
+   */
+  --sedan-bg: hsl(31, 77%, 52%); /* Bright orange */
+  --suv-bg: hsl(184, 100%, 22%); /* Dark cyan */
+  --luxury-bg: hsl(179, 100%, 13%); /* Very dark cyan */
+
+  /*
+   * Neutral Colors
+   */
+
+  --text1: hsl(0, 0%, 95%); /* Very light gray (background, headings, buttons) */
+  --text2: hsla(0, 0%, 100%, 0.75); /* Transparent white (paragraphs): */
+}
+
+main {
+  min-height: 90vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+article {
+  padding: 3em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 65px;
+}
+
+.sedan-article {
+  background-color: var(--sedan-bg);
+}
+
+.suv-article {
+  background-color: var(--suv-bg);
+}
+
+.luxury-article {
+  background-color: var(--luxury-bg);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: var(--text1);
+  font-size: 2.6rem;
+  margin-bottom: 0.2em;
+}
+
+p {
+  color: var(--text2);
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.link-btn {
+  background-color: var(--text1);
+  border: 2px solid var(--text1);
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  border-radius: 24px;
+  margin-top: auto;
+  width: fit-content;
+}
+
+.sedan-article .link-btn {
+  color: var(--sedan-bg);
+}
+
+.suv-article .link-btn {
+  color: var(--suv-bg);
+}
+
+.luxury-article .link-btn {
+  color: var(--luxury-bg);
+}
+
+article .link-btn:hover, article .link-btn:active {
+  color: var(--text1);
+}
+
+.sedan-article .link-btn:hover, .sedan-article .link-btn:active {
+  background-color: var(--sedan-bg);
+}
+
+.suv-article .link-btn:hover, .suv-article .link-btn:active {
+  background-color: var(--suv-bg);
+}
+
+.luxury-article .link-btn:hover, .luxury-article .link-btn:active {
+  background-color: var(--luxury-bg);
+}
+
+
+@media screen and (min-width: 600px) {
+  #container {
+    flex-direction: row;
+  }
+
+  p {
+    margin-bottom: 3.5em;
+  }
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
