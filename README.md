@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/dXu23/interactive-card-component](https://github.com/dXu23/interactive-card-component)
+- Live Site URL: [https://dxu23.github.io/interactive-card-component/](https://dxu23.github.io/interactive-card-component/)
 
 ## My process
 
